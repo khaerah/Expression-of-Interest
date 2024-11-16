@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expression of Interest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="start">
+            <div>
+                <img src="logo.jpeg" alt="Logo" class="image">
+            </div>
+
+            <h1><b>Expression of Interest</b></h1>
+            <p id="Information">Personal Information</p>
+            <div class="hr"></div>
+
+            <!-- Navigation steps -->
+            <div class="range" id="pagination">
+                <div class="personal">
+                    <div class="round">1</div>
+                    <p class="info">Personal Information</p>
+                </div>
+                <div class="personal" >
+                    <div class="round">2</div>
+                    <p class="info">Credit Needs</p>
+                </div>
+                <div class="personal">
+                    <div class="round">3</div>
+                    <p class="info">Primary Employment</p>
+                </div>
+                <div class="personal">
+                    <div class="round">4</div>
+                    <p class="info">Secondary Employment</p>
+                </div>
+                <div class="personal">
+                    <div class="round">5</div>
+                    <p class="info">Face Capture (Optional)</p>
+                </div>
+            </div>
+
+            <section class="input">
+                <!-- Personal Information -->
+                <div class="step active" id="personal-info">
+                    <div class="input" id="input">
+                        <div class="input1">
+                            <label for="first-name">What is your first name?</label><br>
+                            <input type="text" id="first-name" placeholder="Firstname" required>
+                        </div>
+
+                        <div class="input1">
+                            <label for="middle-name">What is your middle name?</label><br>
+                            <input type="text" id="middle-name" placeholder="Middlename" required>
+                        </div>
+
+                        <div class="input1">
+                            <label for="surname">What is your surname?</label><br>
+                            <input type="text" id="surname" placeholder="Last name" required>
+                        </div>
+
+                        <div class="input1">
+                            <label for="email">What is your email?</label><br>
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+
+                        <div class="input1">
+                            <label for="phone">Phone number</label><br>
+                            <input type="tel" id="phone" placeholder="08083728471" required>
+                        </div>
+
+                        <div class="input1">
+                            <label for="gender">What is your gender?</label><br>
+                            <select id="gender" class="choice">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+
+                        <div class="input1">
+                            <label for="dob">What is your date of birth?</label><br>
+                            <input type="date" id="dob">
+                        </div>
+
+                        <div class="input1">
+                            <label for="state-of-origin">What is your state of origin?</label><br>
+                            <select id="state-of-origin" class="choice">
+                                <option value="">Select</option>
+                                <option>Abia</option>
+                                <option>Adamawa</option>
+                                <option>Akwa Ibom</option>
+                                <option>Anambara</option>
+                                <option>Bauchi</option>
+                                <option>Bayelsa</option>
+                                <option>Benue</option>
+                                <option>Borno</option>
+                                <option>Cross river</option>
+                                <option>Delta</option>
+                                <option>Ebonyi</option>
+                                <option>Edo</option>
+                                <option>Ekiti</option>
+                                <option>Enugu</option>
+                                <option>Imo</option>
+                                <option>Jigawa</option>
+                                <option>Kaduna</option>
+                                <option>Kano</option>
+                                <option>Katsina</option>
+                                <option>Kebbi</option>
+                                <option>Kogi</option>
+                                <option>Kwara</option>
+                                <option>Lagos</option>
+                                <option>Nassarawa</option>
+                                <option>Niger</option>
+                                <option>Ogun</option>
+                                <option>Ondo</option>
+                                <option>Osun</option>
+                                <option>Oyo</option>
+                                <option>Plateau</option>
+                                <option>Rivers</option>
+                                <option>Sokoto</option>
+                                <option>Yobe</option>
+                                <option>Zamfara</option>
+                                <option>FCT</option>
+                                <option>Taraba</option>
+                            </select>
+                        </div>
+
+                        <div class="input1">
+                            <label for="residence-state">In what state do you live (residence)?</label><br>
+                            <select id="residence-state" class="choice">
+                                <option value="">Select</option>
+                                <option>Abia</option>
+                                <option>Adamawa</option>
+                                <option>Akwa Ibom</option>
+                                <option>Anambara</option>
+                                <option>Bauchi</option>
+                                <option>Bayelsa</option>
+                                <option>Benue</option>
+                                <option>Borno</option>
+                                <option>Cross river</option>
+                                <option>Delta</option>
+                                <option>Ebonyi</option>
+                                <option>Edo</option>
+                                <option>Ekiti</option>
+                                <option>Enugu</option>
+                                <option>Imo</option>
+                                <option>Jigawa</option>
+                                <option>Kaduna</option>
+                                <option>Kano</option>
+                                <option>Katsina</option>
+                                <option>Kebbi</option>
+                                <option>Kogi</option>
+                                <option>Kwara</option>
+                                <option>Lagos</option>
+                                <option>Nassarawa</option>
+                                <option>Niger</option>
+                                <option>Ogun</option>
+                                <option>Ondo</option>
+                                <option>Osun</option>
+                                <option>Oyo</option>
+                                <option>Plateau</option>
+                                <option>Rivers</option>
+                                <option>Sokoto</option>
+                                <option>Yobe</option>
+                                <option>Zamfara</option>
+                                <option>FCT</option>
+                                <option>Taraba</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Credit Needs -->
+                <div class="step" id="credit">
+                    <div class="input1">
+                        <label for="credit-need"><b>What is your most important need for credit today?</b></label><br>
+                        <select id="credit-need" class="choice">
+                            <option value="">Select your most important need for credit today</option>
+                            <option value="vehicle">Buying a vehicle</option>
+                            <option value="house">Buying a house</option>
+                            <option value="medical">Medical bills</option>
+                            <option value="school-fees">School fees</option>
+                            <option value="utilities">Utilities</option>
+                            <option value="events">Weddings or special events</option>
+                        </select>
+                    </div>
+
+                    <div class="input1">
+                        <label for="borrow-amount"><b>How much money can you borrow today and pay back comfortably over
+                                6 months?</b></label><br>
+                        <input type="number" id="borrow-amount" placeholder="₦ 5000">
+                    </div>
+
+                    <div class="input1">
+                        <label>Have you ever borrowed money from a bank, microfinance, fintech, or loan app
+                            before?</label><br>
+                        <div class="radio">
+                            <input type="radio" id="borrowed-yes" name="borrowed" value="yes">
+                            <label for="borrowed-yes">Yes</label>
+                            <input type="radio" id="borrowed-no" name="borrowed" value="no">
+                            <label for="borrowed-no">No</label>
+                        </div>
+                    </div>
+
+                    <div class="input1">
+                        <label for="nin"><b>What is your NIN (you may dial *346# to get your NIN)?</b></label><br>
+                        <input type="number" id="nin" placeholder="NIN">
+                    </div>
+                </div>
+
+                <!-- Primary Employment -->
+                <div class="step" id="primary">
+                    <div class="input1">
+                        <label for="occupation">What do you do for a living?</label><br>
+                        <select name="" id="" class="choice">
+                            <option value="">Select what you do for a living</option>
+                            <option value="">State civil service</option>
+                            <option value="">Federal civil service</option>
+                            <option value="">Student</option>
+                            <option value="">I work in a company</option>
+                            <option value="">Farmer</option>
+                            <option value="">Unemployed</option>
+                            <option value="">Enterpreneur</option>
+                            <option value="">others</option>
+                        </select>
+
+                        <div class="input1">
+                            <label for="employment">For how many years have you had your current employment?</label><br>
+                            <input type="text" placeholder="For how many years have you had your current employment">
+                        </div>
+
+                        <div class="input1">
+                            <label for="money">How much do you earn per month from your MAIN employment <br> (the
+                                minimum salary or income that enters your bank <br> account monthly)</label><br>
+                            <input type="text" placeholder="₦ Enter amount">
+                        </div>
+
+                        <div class="input1">
+                            <label for="employment">What is your bank account number?</label><br>
+                            <input type="text" placeholder="Account Number">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- secondary employment -->
+                <div class="step" id="secondary">
+                    <div class="secondary">
+                        <div class="input1">
+                            <label for="">Do you have a SECONDARY employment/side hustle?</label><br>
+                            <div class="radio">
+                                <input type="radio" id="borrowed-yes" name="borrowed" value="yes">
+                                <label for="borrowed-yes">Yes</label>
+                                <input type="radio" id="borrowed-no" name="borrowed" value="no">
+                                <label for="borrowed-no">No</label>
+                            </div>
+
+                            <div class="input1">
+                                <label for="">What is your secondary employment/side hustle?</label>
+                                <select name="" id="" class="choice">
+                                    <option value="">Select what you do for a living</option>
+                                    <option value="">State civil service</option>
+                                    <option value="">Federal civil service</option>
+                                    <option value="">Student</option>
+                                    <option value="">I work in a company</option>
+                                    <option value="">Farmer</option>
+                                    <option value="">Unemployed</option>
+                                    <option value="">Enterpreneur</option>
+                                    <option value="">others</option>
+                                </select>
+                            </div>
+
+                            <div class="input1">
+                                <label for="">For how many years have you had your secondary employment?</label>
+                                <input type="text" placeholder="Number of Years in employment">
+                            </div>
+
+                            <div class="input1">
+                                <label for="money">How much do you earn per month from your secondary employment <br>
+                                    (the minimum salary or income that enters your bank <br> account
+                                    monthly)</label><br>
+                                <input type="text" placeholder="₦ Enter amount">
+                            </div>
+
+                            <div class="input1">
+                                <label for="">By submitting this application, you consent to credit check <br> and the
+                                    use of my data for program needs.</label>
+                                <div class="radio">
+                                    <input type="radio" id="borrowed-yes" name="borrowed" value="yes">
+                                    <label for="borrowed-yes">Yes</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- face caption -->
+                <div class="step" id="face">
+                    <div class="face">
+                        <p class="input1">Please capture your face here (Optional) .</p>
+                    </div>
+
+                    <div>
+                        <button class="back" onclick="previousStep()">BACK TO FORM</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Option buttons -->
+            <div class="option">
+                <button class="previous" onclick="previousStep()"><b>PREVIOUS</b></button>
+                <button class="proceed" onclick="nextStep()"><b>PROCEED</b></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image -->
+    <div class="container">
+        <img src="people.png" alt="People" class="people">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
